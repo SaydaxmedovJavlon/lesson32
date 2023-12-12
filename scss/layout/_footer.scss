@@ -1,0 +1,165 @@
+@use '../abstracts/colors' as *;
+@use '../components/buttons' as *;
+
+
+footer {
+    background: $color-five;
+    
+    .footer-contain {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        
+        .footer-left {
+            
+            .footer-left-p{
+                padding-top: 24px;
+                color:#FFF;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                padding-bottom: 24px;
+            }
+            
+            .footer-left-contact {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-items: center;
+                background: $color-four;
+                width: 517px;
+                height: 95px;
+                flex-shrink: 0;
+                
+                p {
+                    color: var(--Dark-blue, #282938);
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 32px; 
+                }
+                
+                a{
+                    color: var(--Dark-blue, #282938);
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+                a:hover{
+                    color: var(--Dark-blue, #dedee3);
+                    
+                }
+            }
+        }
+    }
+    .footer-right{
+        
+        .right-h2 {
+            width: 333px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px;
+        }
+        
+        .right-p {
+            padding-top: 14px;
+            width: 399px;
+            flex-wrap: wrap;
+            color: #F4F6FC;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; 
+            padding-bottom: 28px;
+        }
+        
+        .link {
+            display: flex;
+            gap: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    footer {
+        .footer-contain {
+            display: grid;
+            grid-template-rows: repeat(1fr);
+            gap: 50px;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+            .footer-left {
+                
+                .footer-left-contact {
+                    display: block; 
+                }
+                
+            }
+            
+            .footer-right {
+                
+                .right-h2 {
+                    text-align: center;
+                    
+                }
+                
+                .link {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                a{
+                    display: flex;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    footer {
+        
+        .footer-contain {
+            
+            .footer-left {
+                display: block;
+                .footer-left-contact {
+                    display: inline-block;
+                    justify-content: center;
+                    width: 200px;
+                    height: auto;
+                    
+                    
+                    
+                }
+            }
+            
+            .footer-right {
+                
+                .link {
+                    display: flex;
+                }
+                
+                
+                .right-p {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

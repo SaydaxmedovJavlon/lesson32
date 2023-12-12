@@ -1,0 +1,399 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+h4 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+h5 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+h6 {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn1 {
+  color: #1B1C2A;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  border-radius: 40px;
+  background: var(--Yellow, #FCD980);
+  display: inline-flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn1:hover {
+  color: #1B1C2B;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  border-radius: 40px;
+  background: #FDE4A6;
+  display: inline-flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn2 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  display: inline-flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: var(--Dark-blue, #282938);
+}
+
+.btn2:hover {
+  border-radius: 40px;
+  background: #535460;
+  display: inline-flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+footer {
+  background: #1C1E53;
+}
+footer .footer-contain {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+footer .footer-contain .footer-left .footer-left-p {
+  padding-top: 24px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 24px;
+}
+footer .footer-contain .footer-left .footer-left-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background: #FCD980;
+  width: 517px;
+  height: 95px;
+  flex-shrink: 0;
+}
+footer .footer-contain .footer-left .footer-left-contact p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+footer .footer-contain .footer-left .footer-left-contact a {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+footer .footer-contain .footer-left .footer-left-contact a:hover {
+  color: var(--Dark-blue, #dedee3);
+}
+footer .footer-right .right-h2 {
+  width: 333px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+footer .footer-right .right-p {
+  padding-top: 14px;
+  width: 399px;
+  flex-wrap: wrap;
+  color: #F4F6FC;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 28px;
+}
+footer .footer-right .link {
+  display: flex;
+  gap: 28px;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer .footer-contain {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 50px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  footer .footer-contain .footer-left .footer-left-contact {
+    display: block;
+  }
+  footer .footer-contain .footer-right .right-h2 {
+    text-align: center;
+  }
+  footer .footer-contain .footer-right .link {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-contain .footer-right a {
+    display: flex;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 555px) {
+  footer .footer-contain .footer-left {
+    display: block;
+  }
+  footer .footer-contain .footer-left .footer-left-contact {
+    display: inline-block;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+  }
+  footer .footer-contain .footer-right .link {
+    display: flex;
+  }
+  footer .footer-contain .footer-right .right-p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+header {
+  background: #1C1E53;
+}
+header .header-content {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: #1C1E53;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+header .header-content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+header .header-content nav .nav-items {
+  display: flex;
+  gap: 40px;
+}
+header .header-content nav .nav-items li a {
+  color: #BBBBCB;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+header .header-content nav .nav-items li a.active, header .header-content nav .nav-items li a:hover {
+  border: solid 1px #fff;
+  transition: 0.4s;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+}
+header .header-content .right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+header .header-content .right .btn button {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 41px;
+  border: 1px solid #fff;
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: transparent;
+}
+header .header-content .right .btn button:hover {
+  color: #ffffff;
+  border: 3px solid #fff;
+}
+header .header-content .overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1C1E53;
+  overflow-x: hidden;
+  z-index: 99;
+  transition: 0.6s;
+}
+header .header-content .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #fff;
+}
+header .header-content .overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+header .header-content .overlay .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 54px;
+  color: #a89898;
+  display: block;
+  transition: 0.3s;
+}
+header .header-content .overlay .overlay-content a button {
+  border: 1px solid #a89898;
+  padding: 15px 24px;
+  border-radius: 5px;
+  background: #1C1E53;
+  color: #fff;
+  color: #a89898;
+  cursor: pointer;
+}
+header .header-content .overlay .overlay-content a button:hover {
+  border: 1px solid #ffffff;
+  color: #fff;
+}
+header .header-content .overlay .overlay-content a:hover, header .header-content .overlay .overlay-content .overlay a:focus {
+  color: #f1f1f1;
+}
+header .header-content span {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .header-content nav .right {
+    display: none;
+  }
+  header .header-content span {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

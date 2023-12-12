@@ -1,0 +1,160 @@
+@use '../abstracts/colors' as *;
+@use '../components/buttons' as *;
+
+
+header {
+    background: $color-five;
+    
+    .header-content {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background: $color-five;
+        // background-image: url(/img/bgimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px; 
+            
+            
+            .nav-items {
+                display: flex;
+                gap: 40px;
+                li {
+                    a {
+                        color: #BBBBCB;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px; 
+                    }
+                    a.active,a:hover {
+                        border: solid 1px #fff;
+                        transition: 0.4s;
+                        border-top: transparent;
+                        border-right:transparent;
+                        border-left: transparent;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            
+            .btn {
+                
+                button {
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                    border-radius: 41px;
+                    border: 1px solid #fff;
+                    width: 185px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    cursor: pointer;
+                    background: transparent;
+                }
+                button:hover {
+                    color: #ffffff;
+                    border: 3px solid #fff;
+                }
+            }
+        }
+        .overlay {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgb(0,0,0);
+            // background-image: url(/img/bgimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: $color-five;
+            overflow-x: hidden;
+            z-index: 99;
+            transition: 0.6s;
+            
+            .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+                color: #fff;
+            }
+            .overlay-content{
+                
+                position: relative;
+                top: 25%;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px; 
+                padding-bottom: 50px;
+                overflow: hidden;
+                a{
+                    padding: 8px;
+                    text-decoration: none;
+                    font-size: 54px;
+                    color: #a89898;
+                    display: block;
+                    transition: 0.3s;
+                    
+                    button {
+                        border: 1px solid #a89898;
+                        padding: 15px 24px;
+                        border-radius: 5px;
+                        background: $color-five;
+                        color: #fff;
+                        color: #a89898;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        border: 1px solid #ffffff;
+                        color: #fff;
+                    }
+                }
+                a:hover, .overlay a:focus {
+                    color: #f1f1f1;
+                }
+            }
+        }
+        span {
+            display: none;
+        }
+    } 
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        .header-content {
+            nav {
+                .right {
+                    display: none;
+                }
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
